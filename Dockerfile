@@ -4,4 +4,4 @@ COPY target/addressbook.war /
 
 WORKDIR /
 
-CMD ["java", "-war", "addressbook.war"]
+CMD ["-war", "addressbook.war"]
