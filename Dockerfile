@@ -1,7 +1,7 @@
 FROM openjdk:11
 
-COPY target/addressbook-0.0.1-SNAPSHOT.jar /
+COPY target/addressbook.war /
 
 WORKDIR /
 
-CMD ["java", "-jar", "addressbook-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "addressbook.war"]
