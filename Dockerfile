@@ -1,7 +1,4 @@
-FROM openjdk:11
+From tomcat:8-jre8 
 
-COPY target/addressbook.war /
-
-WORKDIR /
-
-CMD ["-war", "addressbook.war"]
+# copy war file on to container 
+COPY ./target/addressbook.war /usr/local/tomcat/webapps
