@@ -16,8 +16,10 @@ import java.util.logging.Logger;
 public class ContactService {
 
     // Create dummy data by randomly combining first and last names
-    static String[] fnames = { "Santosh", "Saud", "Nehal", "Ahmed", "Dilsher" };
-    static String[] lnames = { "Smith", "Johnson", "Williams", "Jones", "Brown" };
+    static String[] fnames = { "Santosh", "Saud", "Nehal", "Ahmed", "Dilsher"
+                              };
+    static String[] lnames = { "Smith", "Johnson", "Williams", "Jones", "Brown" 
+                              };
 
     private static ContactService instance;
 
@@ -28,7 +30,7 @@ public class ContactService {
 
             Random r = new Random(0);
             Calendar cal = Calendar.getInstance();
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 6; i++) {
                 Contact contact = new Contact();
                 contact.setFirstName(fnames[r.nextInt(fnames.length)]);
                 contact.setLastName(lnames[r.nextInt(fnames.length)]);
